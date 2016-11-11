@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/gouindex.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/shoppingcart.css" type="text/css"/>
+    <script src="../js/cookie.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.12.0/jquery.js"></script>
+    <script src="../js/shoppingcart.js"></script>
+    <script src="../js/cookie.js"></script>
+</head>
+<body>
+<!--头部内容-->
+<div class="header-main">
+    <div class="headerMain-left">
+        <!--头部第一块儿-->
+        <ul class="hMLeft-ul">
+            <li><a href="javascript:;">麦乐购首页</a></li>
+            <li><a href="javascript:;">请登录</a></li>
+            <li class="special"><a href="javascript:;">免费注册</a></li>
+        </ul>
+        <!--头部第二块儿-->
+        <div class="hMLeft-register">
+            <span>其他登录方式:</span>
+            <a href="javascript:;"><img src="../images/qq.png"></a>
+            <a href="javascript:;"><img src="../images/pay.png"></a>
+            <a href="javascript:;"><img src="../images/360.png"></a>
+            <a href="javascript:;"><img src="../images/sina.png"></a>
+        </div>
+        <!--头部第三块儿-->
+        <div class="hMLeft-phone">
+            <span>联系客服:</span>
+            <em>400-666-6600</em>
+        </div>
+    </div>
+    <ul class="headerMain-right">
+        <li class="hMr-pull-down">
+            <a class="hMrfirst" href="javascript:;">我的麦乐购</a>
+            <ul class="pulldown">
+                <li><a href="javascript:;">我的订单</a></li>
+                <li><a href="javascript:;">我的账户</a></li>
+                <li><a href="javascript:;">麦豆兑换</a></li>
+                <li><a href="javascript:;">我的优惠券</a></li>
+                <li><a href="javascript:;">我的收藏</a></li>
+                <li><a href="javascript:;">幸运刮刮卡</a></li>
+            </ul>
+        </li>
+        <li class="hMr-star"><a href="javascript:;">收藏麦乐购</a></li>
+        <li><a href="javascript:;">药品信息</a></li>
+        <li><a href="javascript:;">妈妈赚钱计划</a></li>
+        <li class="hMrlast">
+            <a href="javascript:;">手机麦乐购</a>
+            <div class="app">
+                <img src="../images/app.jpg"/>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--购物车logo-->
+<div class = "carttop">
+    <div class="carttopmian">
+        <h1><a href="javascript:;"><img src="../shoppingcartimages/logo%20.gif"/></a></h1>
+        <div class="orderprocess">
+            <ul>
+                <li class="orderprocess1">
+                    <p>1</p><span>我的购物车</span>
+                </li>
+                <li class="orderprocess2">
+                    <p>2</p><span>订单确认</span>
+                </li>
+                <li class="orderprocess3">
+                    <p>3</p><span>付款</span>
+                </li>
+                <li class="orderprocess4">
+                    <p>4</p><span>购买完成</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--购物车标语-->
+<div class="slogan">
+    <span>主人,我已经在购物车里了,快点把我带走吧!</span>
+</div>
+
+
+<!--主体内容-->
+<div class="cartmain">
+    <!--购物车部分-->
+    <div class="shoppingcart">
+        <h4>购物车</h4>
+        <form class="shoppingcartform">
+            <div class="shoppingcartformmain">
+                <p class="allcheck"><input class="checkbox" type="checkbox" checked="checked"/>全选</p>
+                <div class="productset">
+                    <ul class="productsetul1">
+                        <li class="productsetul1li1"><input type="checkbox" checked/>由麦乐购发货</li>
+                        <li class="productsetul1li2">单价</li>
+                        <li class="productsetul1li3">数量</li>
+                        <li class="productsetul1li4">小计</li>
+                        <li class="productsetul1li5">操作</li>
+                    </ul>
+                    <p class="productsetp1">
+                        <span>包邮</span>
+                        满188元,全场包邮(纸尿裤除外)
+                    </p>
+                    <div class="productsetul">
+                        <!--<ul class="productsetul2">
+                            <li class="productsetul2li1"><input class="goodschcek" type="checkbox"/><img src="../shoppingcartimages/shoppingcartimg1.jpg">
+                                <p class="productsetul2p1"><a href="javascript:;"><span>牛尔老师推荐</span>彼得罗夫PETERTHOMASROTH玫瑰干细胞修护面膜 150ml(海外版)</a></p>
+                                <div>规格:瓶</div>
+                            </li>
+                            <li class="productsetul2li2">￥259.00</li>
+                            <li class="productsetul2li3">
+                                <a class="productsetul2li3a1" href="javascript:;">-</a><input class="goodsnumber" type="text" value="1"/><a class="productsetul2li3a2" href="javascript:;">+</a>
+                            </li>
+                            <li class="productsetul2li4">￥259.00</li>
+                            <li class="productsetul2li5">删除</li>
+                        </ul>
+                        <ul class="productsetul2">
+                            <li class="productsetul2li1"><input type="checkbox" class="goodschcek"/><img src="../shoppingcartimages/shoppingcartimg2.jpg">
+                                <p class="productsetul2p1"><a href="javascript:;"><span>优惠套餐</span>【柔软触感】日本大王GOO.N纸尿裤 M64片（6-11kg）/包*2（海外版）</a></p>
+                                <div>规格:瓶</div>
+                            </li>
+                            <li class="productsetul2li2">￥212.00</li>
+                            <li class="productsetul2li3">
+                                <a class="productsetul2li3a1" href="javascript:;">-</a><input type="text" value="1"/><a class="productsetul2li3a2" href="javascript:;">+</a>
+                            </li>
+                            <li class="productsetul2li4">￥212.00</li>
+                            <li class="productsetul2li5">删除</li>
+                        </ul>-->
+                    </div>
+                    <!--<ul class="productsetul2">
+                        <li class="productsetul2li1"><input type="checkbox"/><img src="../shoppingcartimages/shoppingcartimg1.jpg">
+                            <p class="productsetul2p1"><a href="javascript:;"><span>牛尔老师推荐</span>彼得罗夫PETERTHOMASROTH玫瑰干细胞修护面膜 150ml(海外版)</a></p>
+                            <div>规格:瓶</div>
+                        </li>
+                        <li class="productsetul2li2">￥259.00</li>
+                        <li class="productsetul2li3">
+                            <a class="productsetul2li3a1" href="javascript:;">-</a><input type="text" value="1"/><a class="productsetul2li3a2" href="javascript:;">+</a>
+                        </li>
+                        <li class="productsetul2li4">￥259.00</li>
+                        <li class="productsetul2li5">删除</li>
+                    </ul>
+                    <ul class="productsetul2">
+                        <li class="productsetul2li1"><input type="checkbox"/><img src="../shoppingcartimages/shoppingcartimg2.jpg">
+                            <p class="productsetul2p1"><a href="javascript:;"><span>优惠套餐</span>【柔软触感】日本大王GOO.N纸尿裤 M64片（6-11kg）/包*2（海外版）</a></p>
+                            <div>规格:瓶</div>
+                        </li>
+                        <li class="productsetul2li2">￥212.00</li>
+                        <li class="productsetul2li3">
+                            <a class="productsetul2li3a1" href="javascript:;">-</a><input type="text" value="1"/><a class="productsetul2li3a2" href="javascript:;">+</a>
+                        </li>
+                        <li class="productsetul2li4">￥212.00</li>
+                        <li class="productsetul2li5">删除</li>
+                    </ul>-->
+                    <div class="settleaccounts">
+                        <div class="settleaccountsR">
+                            <span class="settleaccountsRspan1"><input type="checkbox"/>全选</span>
+                            <span class="settleaccountsRspan2">清空购物车</span>
+                            <span class="settleaccountsRspan3">继续购物</span>
+                        </div>
+                        <div class="settleaccountsL">
+                            <span class="settleaccountsLspan1">获得麦豆：13</span>
+                            <span class="settleaccountsLspan2"><i class="goodsnum">0</i>件商品总计:</span>
+                            <span class="settleaccountsLspan3">￥<em class="goodsprices">0.00</em></span>
+                            <input class="settleaccountsLbut" type="button" value="去结算"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--底部列表-->
+<div class="bottomlist">
+    <dl class="bottomlist1">
+        <dt>购物指南</dt>
+        <dd><a href="javascript:;">为什么选麦乐购</a></dd>
+        <dd><a href="javascript:;">购物流程</a></dd>
+        <dd><a href="javascript:;">正品保证</a></dd>
+        <dd><a href="javascript:;">手机麦乐购</a></dd>
+    </dl>
+    <dl class="bottomlist2">
+        <dt>配送方式</dt>
+        <dd><a href="javascript:;">跨境电商介绍</a></dd>
+        <dd><a href="javascript:;">报关说明</a></dd>
+        <dd><a href="javascript:;">配送说明</a></dd>
+        <dd><a href="javascript:;">国际快递查询</a></dd>
+        <dd><a href="javascript:;">国内快递查询</a></dd>
+    </dl>
+    <dl class="bottomlist3">
+        <dt>支付方式</dt>
+        <dd><a href="javascript:;">支付方式介绍</a></dd>
+        <dd><a href="javascript:;">优惠券支付</a></dd>
+        <dd><a href="javascript:;">余额支付</a></dd>
+    </dl>
+    <dl class="bottomlist4">
+        <dt>售后服务</dt>
+        <dd><a href="javascript:;">联系客服</a></dd>
+        <dd><a href="javascript:;">验货签收</a></dd>
+        <dd><a href="javascript:;">退换货政策</a></dd>
+        <dd><a href="javascript:;">退款说明</a></dd>
+        <dd><a href="javascript:;">关于发票</a></dd>
+    </dl>
+    <dl class="bottomlist5">
+        <dt>特色服务</dt>
+        <dd><a href="javascript:;">麦豆说明</a></dd>
+        <dd><a href="javascript:;">会员级别</a></dd>
+        <dd><a href="javascript:;">商务会员卡</a></dd>
+        <dd><a href="javascript:;">VIP会员尊享卡</a></dd>
+        <dd><a href="javascript:;">妈妈赚钱计划</a></dd>
+    </dl>
+    <div class="bottomlist6">
+        <img src="../images/bottomlistapp.png"/>
+    </div>
+</div>
+
+
+<!--关于-->
+<div class="about">
+    <a href="javascript:;">关于麦乐购</a><span>|</span>
+    <a href="javascript:;">保税店专区</a><span>|</span>
+    <a href="javascript:;">服务条款</a><span>|</span>
+    <a href="javascript:;">商户合作</a><span>|</span>
+    <a href="javascript:;">O2O合作</a><span>|</span>
+    <a href="javascript:;">联系我们</a><span>|</span>
+    <a href="javascript:;">友情链接</a><span>|</span>
+    <a href="javascript:;">诚聘英才</a><span>|</span>
+    <a href="javascript:;">手机麦乐购</a><span>|</span>
+    <a href="javascript:;">意见建议</a><span>|</span>
+    <a href="javascript:;">媒体报道</a>
+</div>
+
+
+
+<!--网站信息-->
+<p class="websiteinformation1">
+    <a href="javascript:;"><img src="../images/policeshield.png">京公网安备：11010102000812号</a>  | 中华保险保单号：021544019311050D000004 | 中华人民共和国出版物经营许可证编号：150023 | 广电制作经营许可证：(京)字第06356号
+</p>
+<p class="websiteinformation2">食品经营许可证编号：JY11101070034785 | 食品卫生许可证编号：110101_JX0020 | 乳制品(含婴幼儿配方乳粉)销售资质 | 互联网药品信息服务证书编号：(京)-2016-0095</p>
+<p class="websiteinformation3">Copyright 2006 - 2016 北京麦乐购科技有限公司版权所有 |  营业执照：911101010672694772 |  京ICP备14022296号 | 中国服务热线：400-666-6600</p>
+
+
+
+
+
+</body>
+</html>

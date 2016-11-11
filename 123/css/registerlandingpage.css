@@ -1,0 +1,311 @@
+body {
+  background: #fff;
+}
+
+.top {
+  height: 110px;
+  width: 1280px;
+}
+
+.topcontent {
+  width: 1000px;
+  height: 103px;
+  margin: 0 auto;
+}
+.topcontent h1 {
+  padding-top: 20px;
+  float: left;
+}
+
+.allimg {
+  float: right;
+  height: 44px;
+  width: 502px;
+  margin-top: 45px;
+}
+
+.registerlanding {
+  width: 960px;
+  min-height: 611px;
+  margin: 0 auto;
+}
+
+.reglandleft {
+  float: left;
+  width: 508px;
+  padding-top: 30px;
+  height: 200px;
+}
+
+.landingright {
+  width: 290px;
+  height: 313px;
+  border: #ccc 1px solid;
+  border-top: #ea3918 2px solid;
+  width: 290px;
+  float: right;
+  margin-right: 80px;
+  margin-top: 30px;
+  padding: 20px 40px;
+}
+.landingright .title {
+  font-weight: 100;
+  font-size: 22px;
+  height: 26px;
+  width: 44px;
+  float: left;
+}
+.landingright .landingregister {
+  width: 160px;
+  height: 24px;
+  float: right;
+  display: block;
+  line-height: 24px;
+  text-align: right;
+  color: #666;
+}
+.landingright .landingregister a:hover {
+  color: #03a4fe;
+}
+
+.landingform {
+  margin-top: 25px;
+  width: 290px;
+  height: 267px;
+  float: left;
+}
+
+.landingtex {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding-left: 38px;
+  background: url(../registerlandingimages/tegPng.png) no-repeat 0 0;
+  margin-bottom: 24px;
+}
+
+.landingpsd {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding-left: 38px;
+  background: url(../registerlandingimages/tegPng.png) no-repeat 0 -52px;
+  margin-bottom: 24px;
+}
+
+.landingverificationcode {
+  float: left;
+  width: 90px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding-left: 8px;
+}
+
+.verificationcode {
+  float: left;
+  display: block;
+  width: 74px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.changeone {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  color: #666;
+}
+
+.forgetpsd {
+  width: 100%;
+  height: 14px;
+  margin-top: 25px;
+  float: left;
+  font-size: 12px;
+  text-align: right;
+  color: #666;
+}
+
+.landingbtn {
+  width: 290px;
+  height: 40px;
+  background: #ff2400;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.registerp {
+  height: 20px;
+  width: 100%;
+  margin-top: 10px;
+  color: #666;
+}
+
+.registerright {
+  display: none;
+  border: #ccc 1px solid;
+  border-top: #ea3918 2px solid;
+  width: 290px;
+  float: right;
+  margin-right: 80px;
+  margin-top: 30px;
+  padding: 20px 40px;
+  height: 432px;
+}
+.registerright h3 {
+  float: left;
+  font-size: 22px;
+  color: #444;
+  font-weight: normal;
+  position: relative;
+}
+.registerright .register {
+  float: right;
+  display: block;
+  line-height: 24px;
+  width: 160px;
+  text-align: right;
+}
+.registerright .register em {
+  color: #999;
+}
+
+.registerform {
+  width: 290px;
+  height: 386px;
+  float: left;
+  margin-top: 25px;
+}
+
+.registertex {
+  width: 281px;
+  height: 30px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.hintregistertex {
+  color: #ff2400;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+}
+
+.registerpsd {
+  width: 281px;
+  height: 30px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.hintregisterpsd {
+  color: #ff2400;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+}
+
+.arginregisterpsd {
+  width: 281px;
+  height: 30px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.hintarginregisterpsd {
+  color: #ff2400;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+}
+
+.registerverificationcode {
+  width: 103px;
+  height: 30px;
+  border: 1px solid #ccc;
+  float: left;
+  padding-left: 5px;
+}
+
+.verificationcode1 {
+  float: left;
+  display: block;
+  width: 74px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.changeone1 {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  color: #666;
+}
+
+.hintregisterverificationcode {
+  color: #ff2400;
+  height: 24px;
+  width: 290px;
+  line-height: 24px;
+  float: left;
+}
+
+.notecode {
+  float: left;
+  width: 103px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+
+.getnotecode {
+  width: 120px;
+  height: 30px;
+  float: left;
+  border: 1px solid #ccc;
+  background: #eee;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 3px;
+}
+
+.statement {
+  margin-top: 25px;
+  float: left;
+}
+.statement a {
+  color: #666;
+}
+
+.registerbtn {
+  width: 290px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  float: left;
+  background: #ff2400;
+  margin-top: 3px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.voice {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  width: 100%;
+}
+.voice em {
+  color: #03a4fe;
+}

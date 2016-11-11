@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/gouindex.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/particularspage.css" type="text/css"/>
+    <script src="http://cdn.bootcss.com/jquery/1.12.0/jquery.js"></script>
+    <script src="../js/particularspage.js"></script>
+    <script src="../js/cookie.js"></script>
+</head>
+<body>
+<!--头部内容-->
+<div class="header-main">
+    <div class="headerMain-left">
+        <!--头部第一块儿-->
+        <ul class="hMLeft-ul">
+            <li><a href="javascript:;">麦乐购首页</a></li>
+            <li><a href="javascript:;">请登录</a></li>
+            <li class="special"><a href="javascript:;">免费注册</a></li>
+        </ul>
+        <!--头部第二块儿-->
+        <div class="hMLeft-register">
+            <span>其他登录方式:</span>
+            <a href="javascript:;"><img src="../images/qq.png"></a>
+            <a href="javascript:;"><img src="../images/pay.png"></a>
+            <a href="javascript:;"><img src="../images/360.png"></a>
+            <a href="javascript:;"><img src="../images/sina.png"></a>
+        </div>
+        <!--头部第三块儿-->
+        <div class="hMLeft-phone">
+            <span>联系客服:</span>
+            <em>400-666-6600</em>
+        </div>
+    </div>
+    <ul class="headerMain-right">
+        <li class="hMr-pull-down">
+            <a class="hMrfirst" href="javascript:;">我的麦乐购</a>
+            <ul class="pulldown">
+                <li><a href="javascript:;">我的订单</a></li>
+                <li><a href="javascript:;">我的账户</a></li>
+                <li><a href="javascript:;">麦豆兑换</a></li>
+                <li><a href="javascript:;">我的优惠券</a></li>
+                <li><a href="javascript:;">我的收藏</a></li>
+                <li><a href="javascript:;">幸运刮刮卡</a></li>
+            </ul>
+        </li>
+        <li class="hMr-star"><a href="javascript:;">收藏麦乐购</a></li>
+        <li><a href="javascript:;">药品信息</a></li>
+        <li><a href="javascript:;">妈妈赚钱计划</a></li>
+        <li class="hMrlast">
+            <a href="javascript:;">手机麦乐购</a>
+            <div class="app">
+                <img src="../images/app.jpg"/>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--logo-->
+<div class="logo">
+    <h1><a href="javascript:;"><img src="../images/logo.jpg"/></a></h1>
+    <form class="logoform" action="">
+        <input class="tex" type="text" value="请输入商品名称,支持拼音搜索"><input   type="button" class="but" value="搜索"/>
+        <ul class="search-list"></ul>
+    </form>
+
+    <div class="searchmain">
+        <a class="smfirst" href="">热门关键词:</a><a class=smhot-bull href="">牛栏</a><a class="smhot-flower" href="">花王</a><a href="">美素</a><a href="">爱他美</a><a href="">karicare</a><a href="">喜宝</a><a href="">swisse</a>
+    </div>
+    <img class="smimg" src="../images/logobuy.gif"/>
+</div>
+
+
+<!--导航-->
+<div class="nav">
+    <div class="navgoods">全部商品分类<span class="arrows"></span>
+        <div class="bannernav">
+            <ul>
+                <li class="bannernavli1"><strong></strong><a class="a1top" href="javascript:;">宝宝奶粉</a><a class="a1bottom" href="javascript:;"><span>牛奶粉</span><em>羊奶粉</em></a></li>
+                <li class="bannernavli2"><strong></strong><a class="a2top" href="javascript:;">宝宝辅食</a><a class="a2bottom" href="javascript:;"><span>米粉</span><em>宝宝零食</em></a></li>
+                <li class="bannernavli3"><strong></strong><a class="a3top" href="javascript:;">营养保健</a><a class="a3bottom" href="javascript:;"><span>宝宝营养</span><em>成人营养</em></a></li>
+                <li class="bannernavli4"><strong></strong><a class="a4top" href="javascript:;">宝宝用品</a><a class="a4bottom" href="javascript:;"><span>纸尿裤</span><em>喂养</em><i>洗护</i></a></li>
+                <li class="bannernavli5"><strong></strong><a class="a5top" href="javascript:;">宝宝服饰</a><a href="javascript:;"class="a5bottom"><span>婴幼服饰</span><em>童装</em><i>童鞋</i></a></li>
+                <li class="bannernavli6"><strong></strong><a class="a6top" href="javascript:;">宝宝玩具</a><a class="a6bottom" href="javascript:;"><span>婴幼玩具</span><em>遥控电动</em></a></li>
+                <li class="bannernavli7"><strong></strong><a class="a7top" href="javascript:;">孕产妇用品</a><a class="a7bottom" href="javascript:;"><span>孕前营养</span><em>产前产后</em></a></li>
+                <li class="bannernavli8"><strong></strong><a class="a8top" href="javascript:;">个护化妆</a><a class="a8bottom" href="javascript:;"><span>面部护肤</span><em>女性护理</em></a></li>
+                <li class="bannernavli9"><strong></strong><a class="a9top" href="javascript:;">居家生活</a><a href="javascript:;" class="a9bottom"><span>食品饮料</span><em>生活日用</em></a></li>
+            </ul>
+        </div>
+    </div>
+    <ul class="navul">
+        <li class="navindex"><a href="javascript:;">首页</a></li>
+        <li class="navmilk"><a href="javascript:;">进口奶粉</a></li>
+        <li class="navrob">
+            <a href="javascript:;">
+                <i class="full">整</i><i class="click">点</i><i class="rob">抢</i>
+            </a>
+            <a href="javascript:;">
+                <i class="full1">整</i><i class="click1">点</i><i class="rob1">抢</i>
+            </a>
+        </li>
+        <li class="navbuy"><a href="javascript:;">神马值得买</a></li>
+        <li class="navday"><a href="javascript:;">天天特卖</a><span class="navh"><img src="../images/navh.png"></span></li>
+        <li class="navpromise"><a href="javascript:;">正品保证</a></li>
+        <li class="navoverseas"><a href="javascript:;">海外直邮</a><span class="navn"><img src="../images/navn.png"></span></li>
+        <li class="navstate"><a href="javascript:;">国家馆</a></li>
+
+    </ul>
+    <p class="navborder"></p>
+    <div class="shopping-cart">
+    </div>
+</div>
+
+
+
+
+<!--右边隐藏框-->
+<div class="rightmenu">
+    <div class="clickmenu">
+        <span class="rightmenimg"><img src="../images/bruin.png"/></span>
+        <ul class="rightmenuul1">
+            <li class="username"><a href="javascript:;"></a></li>
+            <li class="buycar"><a href="javascript:;"></a></li>
+        </ul>
+        <ul class="rightmenuul2">
+            <li class="service"><a href="javascript:;"></a><div class="serviceexplain"><em>400-666-6600</em><a href="javascript:;"></a></div></li>
+            <li class="collect"><div class="collectexplain"><a href="javascript:;">我的收藏</a></div><a href="javascript:;"></a></li>
+            <li class="renovation"><div class="renovationexplain"><a href="javascript:;">浏览历史</a></div><a href="javascript:;"></a></li>
+            <li class="menuapp"><div class="menuappexplain"><img src="../images/app.jpg"/></div><a href="javascript:;"></a></li>
+            <li class="ticking"><div class="tickingexplain"><a href="javascript:;">反馈</a></div><a href="javascript:;"></a></li>
+            <li class="backtop"><a href="javascript:;"></a></li>
+        </ul>
+    </div>
+    <div class="rightmenuright">
+        <div class="rightmenuright-car">
+            <div class="font">
+                <a href="javascript:;">喔 ,亲 ,你还没有添加过任何商品哦!去逛逛</a>
+            </div>
+        </div>
+        <div class="rightmenuright-register">
+            <form class="registermessage">
+                <input class="tex1" type="text" placeholder="用户名/手机号"/>
+                <input class="psd" type="password" placeholder="请输入密码"/>
+                <input class="code" type="text" placeholder="验证码"/><input    type="text" class="showcode" value="1124"/><a class="change" href="javascript:;">换一张</a>
+                <input class="bbut" type="button" value="登录"/><a href="javascript:;">免费注册</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--benner-->
+<div class="bannernavexplain" style="z-index:1;border-bottom:0;">
+    <div class="navdiv1">
+        <dl class="navdiv1dl1">
+            <dt>热门品牌</dt>
+            <dd>
+                <a href="javascript:;">荷兰牛栏Nutrilon</a><a href="javascript:;">荷兰美素Hero Baby</a><a class="active" href="javascript:;">新西兰爱他美Aptamil</a><a href="javascript:;">英国爱美他Aptamil</a><a href="javascript:;">德国凯莉泓乐Holle</a><a class="active" href="javascript:;">澳洲贝拉米Bellay's</a><a href="javascript:;">卡洛塔妮Karihome</a><a href="javascript:;">美国雅培Similac</a><a class="active" href="javascript:;">德国爱他美Aptamily</a><a href="javascript:;">英国牛栏Cow&Gate</a><a class="active" href="javascript:;">德国特福芬Topfer</a><a href="javascript:;">新西兰Karicare<span>澳洲a2</span></a><a class="active" href="javascript:;">日本明治 <span>英国Nunnyacre</span></a><a class="active" href="javascript:;">英国纽康特Neocate</a><a href="javascript:;">美国美赞成Meadjohnson</a><a href="javascript:;">日本固力果 <span>新西兰惠氏Wyeth</span></a><a class="active" href="javascript:;">德国喜宝Hipp</a></li>
+            </dd>
+        </dl>
+        <dl class="navdiv1dl2">
+            <dt>优惠套餐</dt>
+            <dd>
+                <a class="active" href="javascript:;">买7送1</a><a href="javascript:;">4罐优惠</a><a href="javascript:;">2罐优惠</a>
+            </dd>
+        </dl>
+        <dl class="navdiv1dl3">
+            <dt>适用年龄</dt>
+            <dd>
+                <a href="javascript:;">0-6个月</a><a href="javascript:;">6-12个月</a><a class="active" href="javascript:;">1-2岁</a><a href="javascript:;">2-3岁</a><a href="javascript:;">3-6岁</a><a href="javascript:;">儿童奶粉</a><a class="active" href="javascript:;">儿童奶粉(直邮)</a>
+            </dd>
+        </dl>
+        <dl class="navdiv1dl4">
+            <dt>奶粉分类</dt>
+            <dd>
+                <a class="active" href="javascript:;">牛奶粉</a><a class="active" href="javascript:;">羊奶粉</a><a class="active" href="javascript:;">有机奶粉</a><a href="javascript:;">益生菌奶粉</a><a href="javascript:;">3-6岁</a><a href="javascript:;">牛奶蛋白过敏奶粉</a><a class="active" href="javascript:;">乳糖不耐受奶粉</a><a href="javascript:;">早产儿奶粉</a><a href="javascript:;">孕妇奶粉</a><a class="active" href="javascript:;">宝宝奶粉(直邮)</a>
+            </dd>
+        </dl>
+    </div>
+
+    <div class="navdiv2">
+        <dl class="navdiv2dl1">
+            <dt>热门品牌</dt>
+            <dd>
+                <ul class="navdiv2dl1ul">
+                    <li><a class="active" href="javascript:;">德国喜宝Hipp</a><a href="javascript:;">美国嘉宝Gerber</a><a class="active" href="javascript:;">美国世界最好Earth's Best</a></li>
+                    <li><a href="javascript:;">美国禧贝Happybaby</a><a class="active" href="javascript:;">德国长发公主Rapunzel</a></li>
+                    <li><a href="javascript:;">意大利美林Mellin</a><a class="active" href="javascript:;">日本和光堂Wakodo</a><a class="active" href="javascript:;">日本贝亲Pigeon</a></li>
+                    <li><a href="javascript:;">美国Yummy Earth</a><a href="javascript:;">亨氏Heinz</a><a href="javascript:;">韩国海地村</a></li>
+                    <li><a href="javascript:;">美国优格曼Dremz</a><a class="active" href="javascript:;">美国谷百Plum</a><a href="javascript:;">伊威Eastwes</a><a href="javascript:;">荷兰牛栏</a></li>
+                    <li><a href="javascript:;">方广</a><a href="javascript:;">德国贝唯他Bebivita</a><a href="javascript:;">韩国宝宝福德Baby food</a></li>
+                    <li><a href="javascript:;">韩国宝噜噜</a><a class="active" href="javascript:;">意大利黛尔Dalla Costa</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="navdiv2dl2">
+            <dt>辅食分类</dt>
+            <dd>
+                <a class="active" href="javascript:;">米粉/麦粉/粥</a><a class="active" href="javascript:;">肉泥/果泥/菜泥</a><a href="javascript:;">米粉/麦粉/粥</a><a href="javascript:;">饮料/果汁</a><a class="active" href="javascript:;">调味/拌饭/油鱼肠/肉肠</a><a href="javascript:;">面条类</a><a class="active" href="javascript:;">宝宝零食</a><a class="active" href="javascript:;">宝宝辅食(直邮)</a>
+            </dd>
+        </dl>
+        <dl class="navdiv2dl3">
+            <dt>月龄</dt>
+            <dd>
+                <a href="javascript:;">辅食添加初期</a><a href="javascript:;">4-6月</a><a href="javascript:;">7-9月</a><a href="javascript:;">10-12月</a><a href="javascript:;">12至36个月</a><a href="javascript:;">4至36个月</a><a href="javascript:;">6-36个月</a>
+            </dd>
+        </dl>
+        <dl class="navdiv2dl4">
+            <dt>优惠套餐</dt>
+            <dd>
+                <a href="javascript:;">2瓶优惠</a><a href="javascript:;">4盒优惠</a>
+            </dd>
+        </dl>
+    </div>
+
+    <div class="navdiv3">
+        <dl class="navdiv3dl1">
+            <dt>宝宝营养热门品牌</dt>
+            <dd>
+                <a class="active" href="javascript:;">美国Childlife</a><a href="javascript:;">澳洲Bio Island</a><a href="javascript:;">美国康萃乐Culturelle</a><a href="javascript:;" class="active">加拿大Ddrops</a><a href="javascript:;">挪威小鱼Nordic naturals</a><a href="javascript:;">美国安利Amway</a><a href="javascript:;">美国熊宝宝I'il Critters</a>
+            </dd>
+        </dl>
+        <dl class="navdiv3dl2">
+            <dt>功效</dt>
+            <dd>
+                <a href="javascript:;">DHA/鱼油</a><a class="active" href="javascript:;">钙镁锌铁</a><a href="javascript:;">维生素/VD</a><a href="javascript:;">益生菌</a><a class="active" href="javascript:;">补脑益智</a><a  class="active" href="javascript:;">提高免疫力</a><a href="javascript:;">调节肠胃</a><a href="javascript:;">清火降火</a>
+            </dd>
+        </dl>
+        <dl class="navdiv3dl3">
+            <dt>营养人群</dt>
+            <dd>
+                <a href="javascript:;">父母健康</a><a href="javascript:;">男士保健</a><a href="javascript:;">魅力女士</a><a href="javascript:;">青少年营养</a><a href="javascript:;">孕妈营养</a><a href="javascript:;">宝宝营养</a><a class="active" href="javascript:;">宝宝营养(直邮)</a><a class="active" href="javascript:;">成人保健品(直邮)</a>
+            </dd>
+        </dl>
+        <dl class="navdiv3dl4">
+            <dt>成人营养热门品牌</dt>
+            <dd>
+                <a class="active" href="javascript:;">澳洲Swisse</a><a href="javascript:;">新西兰好健康Goodhealth</a><a class="active" href="javascript:;">美国康宝莱Herbalife</a><a href="javascript:;">澳洲澳佳宝Blackmores</a><a href="javascript:;">澳洲Healthy Care</a><a class="active" href="javascript:;">德国铁元</a><a class="active" href="javascript:;">日本宝丽POLA</a><a href="javascript:;">美国安利Amway</a>
+            </dd>
+        </dl>
+        <dl class="navdiv3dl5">
+            <dt>功效</dt>
+            <dd>
+                <a class="active" href="javascript:;">美容养颜</a><a href="javascript:;" class="active">瘦身排毒</a><a href="javascript:;">提高免疫力</a><a href="javascript:;">补脑益智</a><a class="active" href="javascript:;">调节内分泌</a><a class="active" href="javascript:;">调节三高</a><a href="javascript:;">眼疲劳/明目</a><a href="javascript:;">胃肠调节</a><a class="active" href="javascript:;">改善睡眠</a><a class="active" href="javascript:;">改善贫血</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="navdiv4">
+        <dl class="navdiv4dl1">
+            <dt>热门品牌</dt>
+            <dd>
+                <a class="active" href="javascript:;">日本花王Merries</a><a href="javascript:;">日本尤妮佳Moony</a><a href="javascript:;">日本大王GOO.N</a><a href="javascript:;" class="active">日本帮宝适</a><a class="active" href="javascript:;">美国小蜜蜂</a><a class="active" href="javascript:;">美国加州宝宝CaliforniaBaby</a><a href="javascript:;">美国艾维诺Aveeno</a><a href="javascript:;">日本贝亲Pigeon</a><a href="javascript:;" class="active">德国博朗</a><a href="javascript:;">德国NUK</a><a href="javascript:;" class="active">德国布朗博士</a><a href="javascript:;">日本贝塔Betta</a><a href="javascript:;">美国可么多么</a>
+            </dd>
+        </dl>
+        <dl class="navdiv4dl2">
+            <dt>纸尿裤/湿巾</dt>
+            <dd>
+                <a class="active" href="javascript:;">纸尿裤</a><a href="javascript:;">拉拉裤</a><a href="javascript:;">湿巾</a><a href="javascript:;">NB号</a><a href="javascript:;">S号</a><a href="javascript:;">M号</a><a href="javascript:;">L号</a><a href="javascript:;">XL/XXL号</a>
+            </dd>
+        </dl>
+        <dl class="navdiv4dl3">
+            <dt>喂养用品</dt>
+            <dd>
+                <a class="active" href="javascript:;">奶瓶/奶嘴</a><a href="javascript:;">水杯/水壶</a><a href="javascript:;">牙胶/安抚</a><a href="javascript:;" class="active">儿童餐具</a><a href="javascript:;">消毒/暖奶/调奶</a><a href="javascript:;">围兜/防溅衣</a><a href="javascript:;">辅食料理机</a><a href="javascript:;">奶瓶清洁/配件</a><a class="active" href="javascript:;">宝宝用品(直邮)</a>
+            </dd>
+        </dl>
+        <dl class="navdiv4dl4">
+            <dt>洗护/护理</dt>
+            <dd>
+                <a class="active" href="javascript:;">防蚊驱蚊</a><a href="javascript:;">沐浴护肤</a><a class="active" href="javascript:;">护肤系列</a><a href="javascript:;">护臀系列</a><a href="javascript:;">牙刷/牙膏</a><a href="javascript:;">洗浴用具</a><a href="javascript:;">坐便器</a><a href="javascript:;" class="active">理发器</a><a href="javascript:;">医护用品</a><a class="active" href="javascript:;">防护用品</a><a href="javascript:;">指甲钳</a><a href="javascript:;">洗手液</a><a class="active" href="javascript:;">洗衣液/皂</a><a href="javascript:;">奶瓶/果蔬清洗液</a>
+            </dd>
+        </dl>
+        <dl class="navdiv4dl5">
+            <dt>车床座椅/日常用品</dt>
+            <dd>
+                <a class="active" href="javascript:;">安全座椅</a><a href="javascript:;">手拖车</a><a class="active" href="javascript:;">婴儿床/童床</a><a href="javascript:;">餐椅</a><a class="active" href="javascript:;">儿童行李箱</a>
+            </dd>
+        </dl>
+    </div>
+
+    <div class="navdiv5">
+        <dl class="navdiv5dl1">
+            <dt>热门品牌</dt>
+            <dd>
+                <a href="javascript:;">麦菲熊</a><a href="javascript:;">BabyBanz</a><a href="javascript:;">麦克珍妮</a><a class="active" href="javascript:;">盈泰</a><a href="javascript:;">妙菲登</a><a href="javascript:;">lambkin kids</a><a href="javascript:;">意婴宝</a><a href="javascript:;">怡研宝贝</a><a href="javascript:;">麦西西</a><a class="active" href="javascript:;">花笙糖</a><a href="javascript:;">海绵泡泡</a><a href="javascript:;">欢乐熊Huanlexiong</a><a class="active" href="javascript:;">娃娃舒</a><a href="javascript:;">班杰威尔</a>
+            </dd>
+        </dl>
+        <dl class="navdiv5dl2">
+            <dt>婴幼服饰</dt>
+            <dd>
+                <a class="active" href="javascript:;">新生儿礼盒</a><a href="javascript:;">连体服/哈衣</a><a href="javascript:;">婴幼儿衣裤</a><a href="javascript:;" class="active">婴幼外出服</a><a class="active" href="javascript:;">口水巾/汗巾</a><a href="javascript:;">隔尿垫/尿布</a><a href="javascript:;">围兜/肚尾</a>
+            </dd>
+        </dl>
+        <dl class="navdiv5dl3">
+            <dt>童装</dt>
+            <dd>
+                <a class="active" href="javascript:;">T恤/衬衫</a><a href="javascript:;">裤子</a><a href="javascript:;">裙子</a><a href="javascript:;">亲子装</a><a href="javascript:;" class="active">毛衣/针织衫</a><a href="javascript:;" class="active">卫衣/外套</a><a href="javascript:;">套装</a><a href="javascript:;">内衣家居服</a><a href="javascript:;">马甲/背心</a><a href="javascript:;">棉服/羽绒服</a><a class="active" href="javascript:;">宝宝服饰(直邮)</a>
+            </dd>
+        </dl>
+        <dl class="navdiv5dl4">
+            <dt>童鞋</dt>
+            <dd>
+                <a class="active" href="javascript:;">学步/机能鞋</a><a href="javascript:;" class="active">短靴/雪地靴</a><a href="javascript:;">皮鞋/公主鞋</a><a href="javascript:;">运动/休闲鞋</a>
+            </dd>
+        </dl>
+        <dl class="navdiv5dl5">
+            <dt>宿居配饰</dt>
+            <dd>
+                <a href="javascript:;">婴儿枕</a><a class="active" href="javascript:;">睡袋</a><a href="javascript:;">毛毯被褥</a><a href="javascript:;">床上用品</a><a href="javascript:;">浴巾毛巾</a><a href="javascript:;">新生儿手脚套</a><a href="javascript:;">帽子手套</a><a href="javascript:;">口罩</a><a href="javascript:;">袜子</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="navdiv6">
+        <dl class="navdiv6dl1">
+            <dt>热门品牌</dt>
+            <dd>
+                <a href="javascript:;">德国Hape</a><a class="active" href="javascript:;">乐高LEGO</a><a href="javascript:;">美国费雪Fisherprice</a><a href="javascript:;">英国jellycat</a><a class="active" href="javascript:;">奥迪双钻</a><a href="javascript:;">优贝比Yobee</a><a href="javascript:;">贝世博</a><a href="javascript:;">迪士尼</a><a class="active" href="javascript:;">美国小泰克Little tikes</a>
+            </dd>
+        </dl>
+        <dl class="navdiv6dl2">
+            <dt>积木/绘画/DIY</dt>
+            <dd>
+                <a href="javascript:;">积木/拼插</a><a class="active" href="javascript:;">磁力片</a><a href="javascript:;">拼图</a><a href="javascript:;">彩泥/绘画</a><a class="active" href="javascript:;">情景玩具</a>
+            </dd>
+        </dl>
+        <dl class="navdiv6dl3">
+            <dt>爬行健身/毛绒公仔</dt>
+            <dd>
+                <a href="javascript:;">爬行垫/毯</a><a class="active" href="javascript:;">沙滩/戏水</a><a href="javascript:;">户外玩具</a><a href="javascript:;">滑板车/轮滑</a><a class="active" href="javascript:;">芭比娃娃</a><a href="javascript:;">卡通娃娃</a><a class="active" href="javascript:;">毛绒玩具</a><a href="javascript:;">抱枕/靠垫</a>
+            </dd>
+        </dl>
+        <dl class="navdiv6dl4">
+            <dt>动漫/卡通玩具</dt>
+            <dd>
+                <a class="active" href="javascript:;">疯狂动物城</a><a href="javascript:;">变形金刚</a><a class="active" href="javascript:;">超级飞侠</a><a class="active" href="javascript:;">飓风战魂/陀螺</a><a href="javascript:;">海底小纵队</a><a class="active" href="javascript:;">巨神战击队</a><a href="javascript:;">巴拉拉小魔仙</a><a href="javascript:;">铠甲勇士</a><a href="javascript:;">机甲兽神/爆裂飞车</a><a href="javascript:;">奇积乐园</a><a href="javascript:;">魔幻飞车</a><a href="javascript:;">其他卡通</a>
+            </dd>
+        </dl>
+        <dl class="navdiv6dl5">
+            <dt>乐器玩具</dt>
+            <dd>
+                <a href="javascript:;">钢琴/电子琴</a><a href="javascript:;">吉他/贝斯</a><a href="javascript:;">其他乐器</a>
+            </dd>
+        </dl>
+        <dl class="navdiv6dl6">
+            <dt>书籍文具</dt>
+            <dd>
+                <a class="active" href="javascript:;">绘本</a><a href="javascript:;">百科探索</a><a href="javascript:;">儿童文学</a><a class="active" href="javascript:;">有声读物</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="navdiv7">
+        <dl class="navdiv7dl1">
+            <dt>热门品牌</dt>
+            <dd>
+                <a class="active" href="javascript:;">安满Anmum</a><a class="active" href="javascript:;">百洛Bio-Oil</a><a href="javascript:;">美国</a><a class="active" href="javascript:;">日本三洋DACCO</a><a href="javascript:;">德国舒氏Snug</a><a href="javascript:;">神豆</a><a class="active" href="javascript:;">美国Lansinoh</a><a href="javascript:;">瑞士美德乐Medela</a><a class="active" href="javascript:;">德国喜宝Hipp</a><a class="active" href="javascript:;">碧缇丝</a>
+            </dd>
+        </dl>
+        <dl class="navdiv7dl2">
+            <dt>孕妈营养</dt>
+            <dd>
+                <a href="javascript:;">孕妇奶粉</a><a class="active" href="javascript:;">DHA/叶酸/备孕</a><a href="javascript:;">孕期营养</a><a class="active" href="javascript:;">产后调理</a><a class="active" href="javascript:;">催奶茶</a>
+            </dd>
+        </dl>
+        <dl class="navdiv7dl3">
+            <dt>孕妈护肤</dt>
+            <dd>
+                <a class="active" href="javascript:;">面部护理</a><a class="active" href="javascript:;">妊辰纹/祛疤</a><a href="javascript:;">身体护理</a><a class="active" href="javascript:;">乳房护理</a><a href="javascript:;">口腔护理</a><a class="active" href="javascript:;">洗发护理</a>
+            </dd>
+        </dl>
+        <dl class="navdiv7dl4">
+            <dt>孕妇穿着</dt>
+            <dd>
+                <a href="javascript:;">防辐射服</a><a href="javascript:;">哺乳文胸</a><a class="active" href="javascript:;">长裤/托腹裤</a><a href="javascript:;">孕妇装</a><a class="active" href="javascript:;">孕妇内裤</a>
+            </dd>
+        </dl>
+        <dl class="navdiv7dl5">
+            <dt>产前产后</dt>
+            <dd>
+                <a class="active" href="javascript:;">防溢乳垫</a><a href="javascript:;">吸奶器</a><a class="active" href="javascript:;">母乳储存</a><a class="active" href="javascript:;">护腰枕</a><a class="active" href="javascript:;">待产包</a><a class="active" href="javascript:;">塑身/束缚带</a><a href="javascript:;">托腹带</a><a href="javascript:;">产妇卫生巾</a><a href="javascript:;">产妇垫</a><a class="active" href="javascript:;">妈咪包</a><a class="active" href="javascript:;">背婴带</a><a href="javascript:;">胎心仪</a><a class="active" href="javascript:;">孕产用品(直邮)</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="navdiv8">
+        <dl class="navdiv8dl1">
+            <dt>热门品牌</dt>
+            <dd>
+                <a href="javascript:;">兰蔻Lancome</a><a class="active" href="javascript:;">韩国SNP</a><a href="javascript:;">韩国可莱丝Clinie</a><a  href="javascript:;">九朵云Cloud 9</a><a class="active" href="javascript:;">资生堂Shiseido</a><a href="javascript:;">蓝蜥蜴BLUE LIZARD</a><a href="javascript:;">兰芝Laneige</a><a class="active" href="javascript:;">美国水宝宝Coppertone</a><a class="active" href="javascript:;">雅诗兰黛Estee Lauder</a><a class="active" href="javascript:;">倩碧Clinique</a><a href="javascript:;">韩国爱茉莉Amore</a><a class="active" href="javascript:;">日本花王Laurier</a>
+            </dd>
+        </dl>
+        <dl class="navdiv8dl2">
+            <dt>面部护理</dt>
+            <dd>
+                <a href="javascript:;">卸妆</a><a href="javascript:;">洁面</a><a href="javascript:;">化妆/爽肤水</a><a href="javascript:;">面霜/乳液</a><a href="javascript:;">精华</a><a class="active" href="javascript:;">眼部护理</a><a class="active" href="javascript:;">防晒/隔离</a><a class="active" href="javascript:;">面膜</a><a href="javascript:;">护肤套装</a><a href="javascript:;">剃须</a><a class="active" href="javascript:;">美妆个护(直邮)</a>
+            </dd>
+        </dl>
+        <dl class="navdiv8dl3">
+            <dt>香水彩妆</dt>
+            <dd>
+                <a class="active" href="javascript:;">粉底/BB霜/遮瑕</a><a class="active" href="javascript:;">眉笔/眉粉</a><a href="javascript:;">睫毛膏</a><a class="active" href="javascript:;">眼线/眼影</a><a class="active" href="javascript:;">唇膏/唇彩</a><a href="javascript:;">腮红</a><a href="javascript:;">美妆工具</a><a class="active" href="javascript:;">女士香水</a><a href="javascript:;">男士香水</a>
+            </dd>
+        </dl>
+        <dl class="navdiv8dl4">
+            <dt>洗发护发/身体护肤/口腔护理</dt>
+            <dd>
+                <a class="active" href="javascript:;">洗发护发</a><a href="javascript:;">直发器/卷发器/电吹风</a><a class="active" href="javascript:;">身体乳/沐浴露</a><a href="javascript:;">美体塑身</a><a class="active" href="javascript:;">颈部护理</a><a class="active" href="javascript:;">手足护理</a><a href="javascript:;">美胸丰胸</a><a href="javascript:;">牙膏牙刷</a><a  href="javascript:;">漱口水</a>
+            </dd>
+        </dl>
+        <dl class="navdiv8dl5">
+            <dt>女性护理</dt>
+            <dd>
+                <a href="javascript:;">卫生巾/护垫</a><a href="javascript:;">私密护理</a><a href="javascript:;">脱毛膏</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="navdiv9">
+        <dl class="navdiv9dl1">
+            <dt>热门品牌</dt>
+            <dd>
+                <a class="active" href="javascript:;">澳洲德运devondale</a><a href="javascript:;">安佳</a><a class="active" href="javascript:;">德国碧然得Brita</a><a href="javascript:;">新西兰康维他</a><a class="active" href="javascript:;">泉林本色</a><a href="javascript:;">北欧欧慕Nathome</a><a class="active" href="javascript:;">惠人Hurom</a>
+            </dd>
+        </dl>
+        <dl class="navdiv9dl2">
+            <dt>成人奶粉/食品饮料</dt>
+            <dd>
+                <a class="active" href="javascript:;">全脂奶粉</a><a href="javascript:;">脱脂奶粉</a><a class="active" href="javascript:;">高钙奶粉</a><a href="javascript:;">羊奶粉</a><a href="javascript:;">休闲食品</a><a class="active"href="javascript:;">坚果/果仁</a><a href="javascript:;">蜂蜜</a><a href="javascript:;">冲调饮品</a><a class="active" href="javascript:;">酸奶/冰淇淋</a><a class="active" href="javascript:;">成人奶粉(直邮)</a><a class="active" href="javascript:;">食品饮料(直邮)</a>
+            </dd>
+        </dl>
+        <dl class="navdiv9dl3">
+            <dt>生活日用/居家/布艺</dt>
+            <dd>
+                <a class="active" href="javascript:;">安全检测</a><a href="javascript:;">家居收纳</a><a href="javascript:;">净化除味</a><a class="active" href="javascript:;">口罩</a><a href="javascript:;">家庭清洁</a><a href="javascript:;">衣架/晾晒</a><a class="active" href="javascript:;">雨伞/雨具</a><a class="active" href="javascript:;">水杯/水壶</a><a  href="javascript:;">内衣/睡衣</a><a class="active" href="javascript:;">毛巾浴巾</a><a  href="javascript:;">床上用品</a><a class="active" href="javascript:;">居家用品(直邮)</a><a class="active" href="javascript:;">轻奢生活(直邮)</a>
+            </dd>
+        </dl>
+        <dl class="navdiv9dl4">
+            <dt>个护健康</dt>
+            <dd>
+                <a class="active" href="javascript:;">按摩器/瘦腿仪</a><a class="active" href="javascript:;">体重秤/血压计</a><a href="javascript:;">足浴器/浴桶</a><a class="active" href="javascript:;">磨毛器/粘毛器</a>
+            </dd>
+        </dl>
+        <dl class="navdiv9dl5">
+            <dt>麦乐购礼品卡</dt>
+            <dd>
+                <a href="javascript:;">500元</a><a href="javascript:;">1000元</a><a href="javascript:;">2000元</a><a  href="javascript:;">5000元</a><a href="javascript:;">10000元</a>
+            </dd>
+        </dl>
+    </div>
+</div>
+
+
+<!--产品标题-->
+<div class="producttitle">
+    <a class="index" href="javascript:;">首页</a>>
+    <a class="timelimit" href="javascript:;">限时抢购</a>>
+    <span>【双重补水】佑天兰Utena  普丽莎 水盈透明质酸面膜（抽取式)</span>
+</div>
+
+
+<!--产品详细-->
+<div class="product">
+    <div class="productimg">
+        <div class="productbigimg">
+            <img src="../particularsimages/productbigimg1.jpg"/>
+            <div class="filter"></div>
+        </div>
+        <div class="productsmallimg">
+            <div class="productpathleft"></div>
+            <div class="productlist">
+                <ul>
+                    <li><img src="../particularsimages/productbigimg1.jpg"/></li>
+                    <li><img src="../particularsimages/productbigimg2.jpg"/></li>
+                    <li><img src="../particularsimages/productbigimg3.jpg"/></li>
+                    <li><img src="../particularsimages/productbigimg4.jpg"/></li>
+                    <li><img src="../particularsimages/productbigimg5.jpg"/></li>
+                </ul>
+            </div>
+            <div class="productpathright"></div>
+        </div>
+        <div class="addgoods">
+            <p><a href="jaavscript:;">收藏商品:</a><span>(20人气)</span></p>
+        </div>
+        <div class="servicehotline">
+            <i></i><span>服务热线:<em>400-666-6600</em></span><strong></strong><a href="javascript:;">在线客服</a>
+        </div>
+    </div>
+    <div class="bigproductimg">
+        <img src="../particularsimages/productbigimg1.jpg">
+    </div>
+    <div class="goodsname">
+        <h1><span>全球购</span>【双重补水】佑天兰Utena  普丽莎 水盈透明质酸面膜（抽取式）（海外版）</h1>
+        <em>UTENA佑天兰，本着真心，贡献社会，以能满足人们的需求为己任的良心企业！有80年历史的日本老店！值得拥有，值得信赖！
+        </em>
+    </div>
+    <div class="goodsparameter">
+        <ul class="paramenter">
+            <li class="paramenter1">
+                <div class="paramenter1left">麦乐购价: <span>￥99.00</span></div>
+                <div class="paramenter1right"><em>含税价</em><i>（包含关税、进口增值税和消费税）</i></div>
+            </li>
+            <li class="paramenter2">
+                <em>市 场 价:</em><span>$19.81 (￥129.00)</span>
+            </li>
+            <li class="paramenter3">
+                <em>促销信息：</em>
+                <p>
+                    <a href="javascript:;">登陆</a>查看更多优惠
+                </p>
+            </li>
+            <li class="paramenter4">
+                <span class="paramenter4span1">
+                    累计销量:
+                    <em>203</em>
+                    <i>|</i>
+                </span>
+                <span class="paramenter4span2">
+                    累计评价:
+                    <em>2</em>
+                    <i>|</i>
+                </span>
+                <span class="paramenter4span3">
+                    赠送麦豆:
+                    <em>2</em>
+                </span>
+            </li>
+            <li class="paramenter5">
+                <p>属性:</p>规格:件
+            </li>
+            <li class="paramenter6">
+                <p>购买数量:</p>
+                <div>
+                    <a class="paramenter6a1" class="" href="javascript:;">-</a>
+                    <input class="num" type="text" value="1"/>
+                    <a class="paramenter6a2" href="javascript:;">+</a>
+                </div>
+            </li>
+        </ul>
+        <div class="joinshopcar" maskprice="99"  maskmessage="全球购【双重补水】佑天兰Utena  普丽莎 水盈透明质酸面膜（抽取式）（海外版）" maskstandard="规格:件"/>
+            <a href="javascript:;" class="particularsjoincart">加入购物车</a>
+        </div>
+        <p class="warmprompt">温馨提示:有麦乐购进行配送</p>
+    </div>
+    <div class="productbg">
+    </div>
+</div>
+
+
+<!--优惠搭配-->
+<div class="favorable">
+    <h3>优惠搭配</h3>
+    <ul class="favorablelist">
+        <li class="favorableli1"><a href="javascript:;">全部搭配</a><span>已选<i class="cont1">1</i></span></li>
+        <li class="favorableli3"><a href="javascript:;">营养素</a></li>
+        <li class="favorableli4"><a href="javascript:;">香水彩妆</a></li>
+        <li class="favorableli3"><a href="javascript:;">按分类</a></li>
+        <li class="favorableli4"><a href="javascript:;">面部护理</a></li>
+    </ul>
+    <div class="required">
+        <img src="../particularsimages/required.jpg"/>
+        <p class="requiredp1">双重补水</p>
+        <p class="requiredp2"><a href="javascript:;">【双重补水】佑天兰Utena  普丽莎 水盈透明质酸面膜（抽取式）（海外版）</a></p>
+        <p class="requiredp3"><span>￥99.00</span><i>￥129.00</i></p>
+        <p class="requiredp4">已售203件</p>
+    </div>
+    <div class="suit">
+        <ul class="suitul">
+            <li class="suitulli1">
+                <i></i>
+                <div class="suitulli1good">
+                    <a class="indexa" href="javascript:;">
+                        <img src="../particularsimages/suitulimg1.jpg"/>
+                    </a>
+                    <p class="suitulli1p1">女神不老秘密</p>
+                    <p class="suitulli1p2"><a href="javascript:;">【女神不老秘密】澳洲斯维斯Swisse Hair Skin Nails液体血橙胶原蛋白口服液500ml（海外版）</a></p>
+                    <p class="suitulli1p3">
+                        <input class="input1" type="checkbox" checked>￥<strong class="spanprice1">167.00</strong><span>￥<strong class="saveprice1">203.00</strong></span>
+                    </p>
+                    <p class="suitulli1p4">
+                        已售7632件
+                    </p>
+                </div>
+            </li>
+            <li class="suitulli1">
+                <i></i>
+                <div class="suitulli1good">
+                    <a class="indexa" href="javascript:;">
+                        <img src="../particularsimages/suitulimg2.jpg"/>
+                    </a>
+                    <p class="suitulli1p1">倍感柔嫩水润</p>
+                    <p class="suitulli1p2"><a href="javascript:;">【女神不老秘密】澳洲斯维斯Swisse Hair Skin Nails液体血橙胶原蛋白口服液500ml（海外版）</a></p>
+                    <p class="suitulli1p3">
+                        <input class="input2" type="checkbox">￥<strong class="spanprice2">39.00</strong><span>￥<strong class="saveprice2">51.00</strong></span>
+                    </p>
+                    <p class="suitulli1p4">
+                        已售7632件
+                    </p>
+                </div>
+            </li>
+            <li class="suitulli1">
+                <i></i>
+                <div class="suitulli1good">
+                    <a class="indexa" href="javascript:;">
+                        <img src="../particularsimages/suitulimg3.jpg"/>
+                    </a>
+                    <p class="suitulli1p1">嘴唇起皮有救了</p>
+                    <p class="suitulli1p2"><a href="javascript:;">【女神不老秘密】澳洲斯维斯Swisse Hair Skin Nails液体血橙胶原蛋白口服液500ml（海外版）</a></p>
+                    <p class="suitulli1p3">
+                        <input class="input3" type="checkbox">￥<strong class="spanprice3">58.00</strong><span>￥<strong   class="saveprice3">75.00</strong></span>
+                    </p>
+                    <p class="suitulli1p4">
+                        已售7632件
+                    </p>
+                </div>
+            </li>
+            <li class="suitulli1">
+                <i></i>
+                <div class="suitulli1good">
+                    <a class="indexa" href="javascript:;">
+                        <img src="../particularsimages/suitulimg4.jpg"/>
+                    </a>
+                    <p class="suitulli1p1">持久锁妆遮瑕</p>
+                    <p class="suitulli1p2"><a href="javascript:;">【女神不老秘密】澳洲斯维斯Swisse Hair Skin Nails液体血橙胶原蛋白口服液500ml（海外版）</a></p>
+                    <p class="suitulli1p3">
+                        <input class="input4" type="checkbox">￥<strong class="spanprice4">319.00</strong><span>￥<strong   class="saveprice4">415.00</strong></span>
+                    </p>
+                    <p class="suitulli1p4">
+                        已售7632件
+                    </p>
+                </div>
+            </li>
+            <li class="suitulli1">
+                <i></i>
+                <div class="suitulli1good">
+                    <a class="indexa" href="javascript:;">
+                        <img src="../particularsimages/suitulimg5.jpg"/>
+                    </a>
+                    <p class="suitulli1p1">家用顺发梳</p>
+                    <p class="suitulli1p2"><a href="javascript:;">【女神不老秘密】澳洲斯维斯Swisse Hair Skin Nails液体血橙胶原蛋白口服液500ml（海外版）</a></p>
+                    <p class="suitulli1p3">
+                        <input class="input5" type="checkbox">￥<strong class="spanprice5">119.00</strong><span>￥<strong  class="saveprice5">155.00</strong></span>
+                    </p>
+                    <p class="suitulli1p4">
+                        已售7632件
+                    </p>
+                </div>
+            </li>
+            <li class="suitulli1">
+                <i></i>
+                <div class="suitulli1good">
+                    <a class="indexa" href="javascript:;">
+                        <img src="../particularsimages/suitulimg6.jpg"/>
+                    </a>
+                    <p class="suitulli1p1">致力自然裸妆</p>
+                    <p class="suitulli1p2"><a href="javascript:;">【女神不老秘密】澳洲斯维斯Swisse Hair Skin Nails液体血橙胶原蛋白口服液500ml（海外版）</a></p>
+                    <p class="suitulli1p3">
+                        <input class="input6" type="checkbox">￥<strong class="spanprice6">98.00</strong><span>￥<strong class="saveprice6">127.00</strong></span>
+                    </p>
+                    <p class="suitulli1p4">
+                        已售7632件
+                    </p>
+                </div>
+            </li>
+            <li class="suitulli1">
+                <i></i>
+                <div class="suitulli1good">
+                    <a class="indexa" href="javascript:;">
+                        <img src="../particularsimages/suitulimg7.jpg"/>
+                    </a>
+                    <p class="suitulli1p1">高效水润保湿</p>
+                    <p class="suitulli1p2"><a href="javascript:;">【女神不老秘密】澳洲斯维斯Swisse Hair Skin Nails液体血橙胶原蛋白口服液500ml（海外版）</a></p>
+                    <p class="suitulli1p3">
+                        <input class="input7" type="checkbox">￥<strong class="spanprice7">99.00</strong><span>￥<strong class="saveprice7">129.00</strong></span>
+                    </p>
+                    <p class="suitulli1p4">
+                        已售7632件
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="calculate">
+        <span class="equalto"></span>
+        <p class="calculatep1">已选<i class="cont2">1</i>个搭配</p>
+        <p class="calculatep2">搭配价:￥<span class="spanprice">266.00</span></p>
+        <p class="calculatep3">优惠搭配为您节省了￥<span class="saveprice">66.00</span></p>
+        <a class="join" href="javascript:;">加入购物车</a>
+    </div>
+</div>
+
+<!--左右块儿开始-->
+<div class="maskmodular">
+    <div class="leftmodular">
+        <div class="brand">
+            <a href="javascript:;">
+                面膜(8)
+            </a>
+        </div>
+        <div class="newsgoods1">
+            <h3>新品抢先看</h3>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods1.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods2.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods3.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods2">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods4.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+        </div>
+        <div class="newsgoods2">
+            <h3>浏览过商品的用户还浏览了</h3>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods5.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods6.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods7.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods8.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods9.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods2">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods10.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+        </div>
+        <div class="newgoods3">
+            <h3>最近浏览过的商品</h3>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods11.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods12.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods13.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods14.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods1">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods15.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+            <div class="goods2">
+                <a class="goods1img" href="javascript:;">
+                    <img src="../particularsimages/newgoods16.jpg">
+                </a>
+                <p class="goods1p1">
+                    <a href="javascript:;"><span>日本直邮 包税</span>【补水保湿】佑天兰Utena艳肌玻尿酸面膜4片/盒（2盒装）
+                    </a>
+                </p>
+                <em>￥182.00</em><i>￥139.00</i>
+            </div>
+        </div>
+    </div>
+    <div class="rightmodular">
+        <div class="hotrecommend">
+            <h3>爆款推荐区</h3>
+            <div class="hotrecommendimg">
+                <a href="javascript:;">
+                    <img src="../particularsimages/hotrecommend.jpg"/>
+                </a>
+            </div>
+        </div>
+        <div class="joincar">
+            <ul>
+                <li class="joinshopcarli1 joincaractive"><a href="javascript:;">商品详情</a></li>
+                <li class="joinshopcarli2"><a href="javascript:;">商品评价(2)</a></li>
+                <li class="joinshopcarli3"><a href="javascript:;"><span></span>在线客服</a></li>
+                <li class="joinshopcarli4"><a href="javascript:;">加入收藏</a></li>
+                <li class="joinshopcarli5">
+                    <span>￥99</span>
+                    <p>加入购物车</p>
+                </li>
+            </ul>
+        </div>
+        <div class="big1">
+            <a href="javascript:;">
+                <img src="../particularsimages/big1.jpg"/>
+            </a>
+        </div>
+        <div class="big2">
+        </div>
+        <div class="big3">
+        </div>
+        <div class="big4">
+        </div>
+        <div class="big5">
+        </div>
+        <div class="big6">
+        </div>
+        <div class="big7">
+        </div>
+        <div class="big8">
+        </div>
+        <div class="big9">
+        </div>
+        <div class="evaluate">
+            <ul>
+                <li><a href="javascript:;">全部评价</a></li>
+                <li><a href="javascript:;">晒单的评价</a></li>
+                <li class="evaluateright"><a href="javascript:;">写评论</a></li>
+            </ul>
+        </div>
+        <div class="evaluatemain">
+            <div class="evaluatemainimg">
+                <a href="javascript:;">
+                    <img src="../particularsimages/productbigimg2.jpg"/>
+                </a>
+            </div>
+            <div class="evaluatemainfont">
+                <p>
+                    <a href="javascript:;">【双重补水】佑天兰Utena  普丽莎 水盈透明质酸面膜（抽取式）</a><span></span>
+                </p>
+                <div class="nickname">
+                    <span class="nicknamespan1"><i>V5</i>至尊会员</span>
+                    <span class="nicknamespan2">liy***2016-07-22 13:10 </span>
+                </div>
+                <div class="evaluatemessage">
+                    挺好用，我是面膜狂人，每天都要敷面膜，所以各种牌子的各种款式功能的试用，这个牌子的还真的不错呢~
+                </div>
+                <div class="replymessage">
+                    麦乐购回复
+                    <span>2016/7/22 18:13:49</span>
+                    <em>亲爱的麦乐购会员，您好,感谢您对我们的支持,我们会做到更加的贴心，让您更加的放心，祝您生活幸福，宝宝健康快乐！（麦乐购客服中心）</em>
+                </div>
+            </div>
+        </div>
+        <div class="evaluatemain">
+            <div class="evaluatemainimg">
+                <a href="javascript:;">
+                    <img src="../particularsimages/newgoods1.jpg"/>
+                </a>
+            </div>
+            <div class="evaluatemainfont">
+                <p>
+                    <a href="javascript:;">【双重补水】佑天兰Utena  普丽莎 水盈透明质酸面膜（抽取式）</a><span></span>
+                </p>
+                <div class="nickname">
+                    <span class="nicknamespan1"><i>V5</i>至尊会员</span>
+                    <span class="nicknamespan2">liy***2016-07-22 13:10 </span>
+                </div>
+                <div class="evaluatemessage">
+                    挺好用，我是面膜狂人，每天都要敷面膜，所以各种牌子的各种款式功能的试用，这个牌子的还真的不错呢~
+                </div>
+                <div class="replymessage">
+                    麦乐购回复
+                    <span>2016/7/22 18:13:49</span>
+                    <em>亲爱的麦乐购会员，您好,感谢您对我们的支持,我们会做到更加的贴心，让您更加的放心，祝您生活幸福，宝宝健康快乐！（麦乐购客服中心）</em>
+                </div>
+            </div>
+        </div>
+        <div class="evaluatemain">
+            <div class="evaluatemainimg">
+                <a href="javascript:;">
+                    <img src="../particularsimages/newgoods2.jpg"/>
+                </a>
+            </div>
+            <div class="evaluatemainfont">
+                <p>
+                    <a href="javascript:;">【双重补水】佑天兰Utena  普丽莎 水盈透明质酸面膜（抽取式）</a><span></span>
+                </p>
+                <div class="nickname">
+                    <span class="nicknamespan1"><i>V5</i>至尊会员</span>
+                    <span class="nicknamespan2">liy***2016-07-22 13:10 </span>
+                </div>
+                <div class="evaluatemessage">
+                    挺好用，我是面膜狂人，每天都要敷面膜，所以各种牌子的各种款式功能的试用，这个牌子的还真的不错呢~
+                </div>
+                <div class="replymessage">
+                    麦乐购回复
+                    <span>2016/7/22 18:13:49</span>
+                    <em>亲爱的麦乐购会员，您好,感谢您对我们的支持,我们会做到更加的贴心，让您更加的放心，祝您生活幸福，宝宝健康快乐！（麦乐购客服中心）</em>
+                </div>
+            </div>
+        </div>
+        <div class="evaluatemain">
+            <div class="evaluatemainimg">
+                <a href="javascript:;">
+                    <img src="../particularsimages/newgoods3.jpg"/>
+                </a>
+            </div>
+            <div class="evaluatemainfont">
+                <p>
+                    <a href="javascript:;">【双重补水】佑天兰Utena  普丽莎 水盈透明质酸面膜（抽取式）</a><span></span>
+                </p>
+                <div class="nickname">
+                    <span class="nicknamespan1"><i>V5</i>至尊会员</span>
+                    <span class="nicknamespan2">liy***2016-07-22 13:10 </span>
+                </div>
+                <div class="evaluatemessage">
+                    挺好用，我是面膜狂人，每天都要敷面膜，所以各种牌子的各种款式功能的试用，这个牌子的还真的不错呢~
+                </div>
+                <div class="replymessage">
+                    麦乐购回复
+                    <span>2016/7/22 18:13:49</span>
+                    <em>亲爱的麦乐购会员，您好,感谢您对我们的支持,我们会做到更加的贴心，让您更加的放心，祝您生活幸福，宝宝健康快乐！（麦乐购客服中心）</em>
+                </div>
+            </div>
+        </div>
+        <div class="evaluatemain">
+            <div class="evaluatemainimg">
+                <a href="javascript:;">
+                    <img src="../particularsimages/newgoods5.jpg"/>
+                </a>
+            </div>
+            <div class="evaluatemainfont">
+                <p>
+                    <a href="javascript:;">【双重补水】佑天兰Utena  普丽莎 水盈透明质酸面膜（抽取式）</a><span></span>
+                </p>
+                <div class="nickname">
+                    <span class="nicknamespan1"><i>V5</i>至尊会员</span>
+                    <span class="nicknamespan2">liy***2016-07-22 13:10 </span>
+                </div>
+                <div class="evaluatemessage">
+                    挺好用，我是面膜狂人，每天都要敷面膜，所以各种牌子的各种款式功能的试用，这个牌子的还真的不错呢~
+                </div>
+                <div class="replymessage">
+                    麦乐购回复
+                    <span>2016/7/22 18:13:49</span>
+                    <em>亲爱的麦乐购会员，您好,感谢您对我们的支持,我们会做到更加的贴心，让您更加的放心，祝您生活幸福，宝宝健康快乐！（麦乐购客服中心）</em>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--产品保障-->
+<div class="producet">
+    <dl class="producet1">
+        <span></span>
+        <dt>海外选购</dt>
+        <dd>精选海外优质品牌</dd>
+    </dl>
+    <dl class="producet1">
+        <span></span>
+        <dt>海外选购</dt>
+        <dd>精选海外优质品牌</dd>
+    </dl>
+    <dl class="producet1">
+        <span></span>
+        <dt>海外选购</dt>
+        <dd>精选海外优质品牌</dd>
+    </dl>
+    <dl class="producet1">
+        <span></span>
+        <dt>海外选购</dt>
+        <dd>精选海外优质品牌</dd>
+    </dl>
+    <dl class="producet1">
+        <span></span>
+        <dt>海外选购</dt>
+        <dd>精选海外优质品牌</dd>
+    </dl>
+</div>
+
+
+<!--底部列表-->
+<div class="bottomlist">
+    <dl class="bottomlist1">
+        <dt>购物指南</dt>
+        <dd><a href="javascript:;">为什么选麦乐购</a></dd>
+        <dd><a href="javascript:;">购物流程</a></dd>
+        <dd><a href="javascript:;">正品保证</a></dd>
+        <dd><a href="javascript:;">手机麦乐购</a></dd>
+    </dl>
+    <dl class="bottomlist2">
+        <dt>配送方式</dt>
+        <dd><a href="javascript:;">跨境电商介绍</a></dd>
+        <dd><a href="javascript:;">报关说明</a></dd>
+        <dd><a href="javascript:;">配送说明</a></dd>
+        <dd><a href="javascript:;">国际快递查询</a></dd>
+        <dd><a href="javascript:;">国内快递查询</a></dd>
+    </dl>
+    <dl class="bottomlist3">
+        <dt>支付方式</dt>
+        <dd><a href="javascript:;">支付方式介绍</a></dd>
+        <dd><a href="javascript:;">优惠券支付</a></dd>
+        <dd><a href="javascript:;">余额支付</a></dd>
+    </dl>
+    <dl class="bottomlist4">
+        <dt>售后服务</dt>
+        <dd><a href="javascript:;">联系客服</a></dd>
+        <dd><a href="javascript:;">验货签收</a></dd>
+        <dd><a href="javascript:;">退换货政策</a></dd>
+        <dd><a href="javascript:;">退款说明</a></dd>
+        <dd><a href="javascript:;">关于发票</a></dd>
+    </dl>
+    <dl class="bottomlist5">
+        <dt>特色服务</dt>
+        <dd><a href="javascript:;">麦豆说明</a></dd>
+        <dd><a href="javascript:;">会员级别</a></dd>
+        <dd><a href="javascript:;">商务会员卡</a></dd>
+        <dd><a href="javascript:;">VIP会员尊享卡</a></dd>
+        <dd><a href="javascript:;">妈妈赚钱计划</a></dd>
+    </dl>
+    <div class="bottomlist6">
+        <img src="../images/bottomlistapp.png"/>
+    </div>
+</div>
+
+
+
+<!--关于-->
+<div class="about">
+    <a href="javascript:;">关于麦乐购</a><span>|</span>
+    <a href="javascript:;">保税店专区</a><span>|</span>
+    <a href="javascript:;">服务条款</a><span>|</span>
+    <a href="javascript:;">商户合作</a><span>|</span>
+    <a href="javascript:;">O2O合作</a><span>|</span>
+    <a href="javascript:;">联系我们</a><span>|</span>
+    <a href="javascript:;">友情链接</a><span>|</span>
+    <a href="javascript:;">诚聘英才</a><span>|</span>
+    <a href="javascript:;">手机麦乐购</a><span>|</span>
+    <a href="javascript:;">意见建议</a><span>|</span>
+    <a href="javascript:;">媒体报道</a>
+</div>
+
+
+
+<!--网站信息-->
+<p class="websiteinformation1">
+    <a href="javascript:;"><img src="../images/policeshield.png">京公网安备：11010102000812号</a>  | 中华保险保单号：021544019311050D000004 | 中华人民共和国出版物经营许可证编号：150023 | 广电制作经营许可证：(京)字第06356号
+</p>
+<p class="websiteinformation2">食品经营许可证编号：JY11101070034785 | 食品卫生许可证编号：110101_JX0020 | 乳制品(含婴幼儿配方乳粉)销售资质 | 互联网药品信息服务证书编号：(京)-2016-0095</p>
+<p class="websiteinformation3">Copyright 2006 - 2016 北京麦乐购科技有限公司版权所有 |  营业执照：911101010672694772 |  京ICP备14022296号 | 中国服务热线：400-666-6600</p>
+
+
+<!--网站认证-->
+<div class="interattestation">
+    <a href="javascript:;"><img src="../images/attestation1.png"></a>
+    <a href="javascript:;"><img src="../images/attestation2.png"></a>
+    <a href="javascript:;"><img src="../images/attestation3.png"></a>
+    <a href="javascript:;"><img src="../images/attestation4.png"></a>
+    <a href="javascript:;"><img src="../images/attestation5.png"></a>
+</div>
+</body>
+</html>

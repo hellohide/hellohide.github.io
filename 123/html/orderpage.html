@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单页</title>
+    <link rel="stylesheet" href="../css/gouindex.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/orderpage.css" type="text/css"/>
+
+    <script src="../js/cookie.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.12.0/jquery.js"></script>
+    <script src="../js/orderpage.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/area.js"></script>
+
+</head>
+<body>
+<!--头部内容-->
+<div class="header-main">
+    <div class="headerMain-left">
+        <!--头部第一块儿-->
+        <ul class="hMLeft-ul">
+            <li><a href="javascript:;">麦乐购首页</a></li>
+            <li><a href="javascript:;">请登录</a></li>
+            <li class="special"><a href="javascript:;">免费注册</a></li>
+        </ul>
+        <!--头部第二块儿-->
+        <div class="hMLeft-register">
+            <span>其他登录方式:</span>
+            <a href="javascript:;"><img src="../images/qq.png"></a>
+            <a href="javascript:;"><img src="../images/pay.png"></a>
+            <a href="javascript:;"><img src="../images/360.png"></a>
+            <a href="javascript:;"><img src="../images/sina.png"></a>
+        </div>
+        <!--头部第三块儿-->
+        <div class="hMLeft-phone">
+            <span>联系客服:</span>
+            <em>400-666-6600</em>
+        </div>
+    </div>
+    <ul class="headerMain-right">
+        <li class="hMr-pull-down">
+            <a class="hMrfirst" href="javascript:;">我的麦乐购</a>
+            <ul class="pulldown">
+                <li><a href="javascript:;">我的订单</a></li>
+                <li><a href="javascript:;">我的账户</a></li>
+                <li><a href="javascript:;">麦豆兑换</a></li>
+                <li><a href="javascript:;">我的优惠券</a></li>
+                <li><a href="javascript:;">我的收藏</a></li>
+                <li><a href="javascript:;">幸运刮刮卡</a></li>
+            </ul>
+        </li>
+        <li class="hMr-star"><a href="javascript:;">收藏麦乐购</a></li>
+        <li><a href="javascript:;">药品信息</a></li>
+        <li><a href="javascript:;">妈妈赚钱计划</a></li>
+        <li class="hMrlast">
+            <a href="javascript:;">手机麦乐购</a>
+            <div class="app">
+                <img src="../images/app.jpg"/>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<!--订单页logo-->
+<div class = "carttop">
+    <div class="carttopmian">
+        <h1><a href="javascript:;"><img src="../shoppingcartimages/logo%20.gif"/></a></h1>
+        <div class="orderprocess">
+            <ul>
+                <li class="orderprocess1">
+                    <p>1</p><span>我的购物车</span>
+                </li>
+                <li class="orderprocess2">
+                    <p>2</p><span>订单确认</span>
+                </li>
+                <li class="orderprocess3">
+                    <p>3</p><span>付款</span>
+                </li>
+                <li class="orderprocess4">
+                    <p>4</p><span>购买完成</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--订单确认模块儿-->
+<div class="ordermodular">
+    <div class="ordermodularmain">
+        <h4>订单确认</h4>
+        <div class="ordermodulartop">
+            <div class="ordermodularaddres">
+                <h5>收货地址</h5>
+                <div class="addresmessage">
+                    <ul>
+                        <li class="addresmessage1">
+                            <span class="span1"><em>*</em>所在地区:</span>
+                            <select id="s_province" name="s_province"></select>
+                            <select id="s_city" name="s_city"></select>
+                            <select id="s_county" name="s_county"></select>
+                            <span class="postcode">邮政编码:</span>
+                            <input class="writepostcode" type="text" value=""/>
+                            <!--<select class="province">
+                                <option>&#45;&#45;请选择省份&#45;&#45;</option>
+                                <option>北京</option>
+                                <option>天津</option>
+                                <option>河北省</option>
+                                <option>山西省</option>
+                                <option>内蒙古自治区</option>
+                                <option>辽宁省</option>
+                                <option>吉林省</option>
+                                <option>黑龙江省</option>
+                                <option>上海</option>
+                                <option>江苏省</option>
+                                <option>浙江省</option>
+                                <option>安徽省</option>
+                                <option>福建省</option>
+                                <option>江西省</option>
+                                <option>山东省</option>
+                                <option>河南省</option>
+                                <option>湖北省</option>
+                                <option>湖南省</option>
+                                <option>广东省</option>
+                                <option>广西壮族自治区</option>
+                                <option>海南省</option>
+                                <option>重庆</option>
+                                <option>四川省</option>
+                                <option>贵州省</option>
+                                <option>云南省</option>
+                                <option>西藏自治区</option>
+                                <option>陕西省</option>
+                                <option>甘肃省</option>
+                                <option>青海省</option>
+                                <option>宁夏回族自治区</option>
+                                <option>新疆维吾尔自治区</option>
+                            </select>
+                            <select class="sel" name="city" id="city">
+                                <option>&#45;&#45;请选择城市&#45;&#45;</option>
+                            </select>-->
+                        </li>
+                        <li class="addresmessage2">
+                            <span class="span2"><em>*</em>详细地址:</span>
+                            <textarea name="textareal" class="detailedarea"></textarea>
+                        </li>
+                        <li class="addresmessage3">
+                            <span class="span3"><em>*</em>收货人姓名:</span>
+                            <input class="consignee" type="text" placeholder="请填写真实姓名，不可是X先生、X小姐、昵称" value="">
+                        </li>
+                        <li class="addresmessage4">
+                            <span class="span4"><em>*</em>手机号码:</span>
+                            <input class="phonenum" type="text" placeholder="手机电话号码必须填一项">
+                        </li>
+                        <li class="addresmessage5">
+                            <span class="span5"><em>*</em>座机号码:</span>
+                            <input class="specialplane" type="text" placeholder="电话号码">
+                        </li>
+                        <li class="addresmessage6">
+                            <p id="set"><input id="aa" type="checkbox"><label for="aa">设为默认地址</label></p>
+                        </li>
+                        <li class="addresmessage7">
+                            <a href="javascript:;">保存收货地址</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <h5 class="affirm">确认商品信息<a class="backshoppingcart" href="javascript:;">返回购物车</a></h5>
+            <div class="ordergoods">
+                <ul class="productsetul1">
+                    <li class="productsetul1li1">由麦乐购发货</li>
+                    <li class="productsetul1li2">单价</li>
+                    <li class="productsetul1li3">数量</li>
+                    <li class="productsetul1li4">小计</li>
+                </ul>
+                <div class="productsetul">
+                    <ul class="productsetul2">
+                        <li class="productsetul2li1"><img src="../shoppingcartimages/shoppingcartimg1.jpg">
+                            <p class="productsetul2p1"><a href="javascript:;"><span>牛尔老师推荐</span>彼得罗夫PETERTHOMASROTH玫瑰干细胞修护面膜 150ml(海外版)</a></p>
+                            <div>规格:瓶</div>
+                        </li>
+                        <li class="productsetul2li2">￥259.00</li>
+                        <li class="productsetul2li3">
+                            1
+                        </li>
+                        <li class="productsetul2li4">￥259.00</li>
+                    </ul>
+                    <ul class="productsetul2">
+                        <li class="productsetul2li1">
+                            <img src="../shoppingcartimages/shoppingcartimg2.jpg">
+                            <p class="productsetul2p1"><a href="javascript:;"><span>优惠套餐</span>【柔软触感】日本大王GOO.N纸尿裤 M64片（6-11kg）/包*2（海外版）</a></p>
+                            <div>规格:瓶</div>
+                        </li>
+                        <li class="productsetul2li2">￥212.00</li>
+                        <li class="productsetul2li3">
+                            1
+                        </li>
+                        <li class="productsetul2li4">￥212.00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="affirm1">
+                <img src="../orderpageimages/settleConAdd.png"><a href="javascript:;">发票</a>
+            </div>
+            <div class="affirm2">
+                <p class="affirm2p1"><img src="../orderpageimages/settleConAdd.png"><a href="javascript:;">优惠券</a></p>
+                <p class="affirm2p2">
+                    有<i>0</i>张优惠券可使用<img src="../orderpageimages/quanConGif.gif"/>
+                </p>
+                <p class="affirm2p3">有实体券或优惠券编码吗?</p>
+            </div>
+            <div class="remark">
+                订单备注<input class="remarkinput" type="text">
+            </div>
+            <div class="grossamount">
+                <p class="goodsgrossamount">
+                    <span>商品总金额</span><em><i>￥</i><strong class="goodsdefray1">471.00</strong></em>
+                </p>
+                <p class="ordergrossamount">
+                    <span>订单总金额</span><em><i>￥</i><strong class="goodsdefray2">471.00</strong></em>
+                </p>
+            </div>
+            <div class="clearfloat"></div>
+            <div class="defray">
+                <p class="defrayp1">应付总额:<span>￥</span><i class="goodsdefray3">471.00</i></p>
+                <p class="defrayp2">获得麦豆18</p>
+                <p class="defrayp3">
+                    <input class="defraybut" type="button" value="提交订单">
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--关于-->
+<div class="about">
+    <a href="javascript:;">关于麦乐购</a><span>|</span>
+    <a href="javascript:;">保税店专区</a><span>|</span>
+    <a href="javascript:;">服务条款</a><span>|</span>
+    <a href="javascript:;">商户合作</a><span>|</span>
+    <a href="javascript:;">O2O合作</a><span>|</span>
+    <a href="javascript:;">联系我们</a><span>|</span>
+    <a href="javascript:;">友情链接</a><span>|</span>
+    <a href="javascript:;">诚聘英才</a><span>|</span>
+    <a href="javascript:;">手机麦乐购</a><span>|</span>
+    <a href="javascript:;">意见建议</a><span>|</span>
+    <a href="javascript:;">媒体报道</a>
+</div>
+
+
+
+<!--网站信息-->
+<p class="websiteinformation1">
+    <a href="javascript:;"><img src="../images/policeshield.png">京公网安备：11010102000812号</a>  | 中华保险保单号：021544019311050D000004 | 中华人民共和国出版物经营许可证编号：150023 | 广电制作经营许可证：(京)字第06356号
+</p>
+<p class="websiteinformation2">食品经营许可证编号：JY11101070034785 | 食品卫生许可证编号：110101_JX0020 | 乳制品(含婴幼儿配方乳粉)销售资质 | 互联网药品信息服务证书编号：(京)-2016-0095</p>
+<p class="websiteinformation3">Copyright 2006 - 2016 北京麦乐购科技有限公司版权所有 |  营业执照：911101010672694772 |  京ICP备14022296号 | 中国服务热线：400-666-6600</p>
+<script type="text/javascript">_init_area();</script>
+</body>
+</html>
